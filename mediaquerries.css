@@ -1,0 +1,11 @@
+@media(max-width: 950px){
+  .navbar a{
+    display: none;
+  }
+  .home-content{
+    text-align: center;
+  }
+  .navbar i{
+    display: flex;
+  }
+}

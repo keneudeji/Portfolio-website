@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquerries.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">KU</a>
+    <nav class="sidebar">
+      <i onclick=hideSidebar() class='bx bx-x'></i>
+      <a href="index.html" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+      <i onclick= showSidebar() class='bx bx-menu'></i>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="home-content">
+      <h1>Hi, I'm Ekenechukwu Okey-Udeji Paul</h1>
+      <p>I am a second-year computer science student with extensive knowledge of web development, database management, and technical applications utilised in a variety of educational and professional settings. I have a strong sense of motivation and drive for my work. I am eager to pick up new skills and help in the growth of your organisation.</p>
+      <div class="btn-box">
+        <button onclick="window.open('./cv-cl/My_CV.pdf')">Download CV</button>
+      </div>
+    </div>
+    <div class="home-sci">
+      <a href="https://www.linkedin.com/in/ekenechukwu-okey-udeji-378ab0310/"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/keneudeji"><i class='bx bxl-github' ></i></a>
+    </div>
+  </section>
+
+
+  <script>
+   function showSidebar(){
+    const sidebar=document.querySelector('.sidebar')
+    sidebar.style.display= 'flex'
+    }
+    function hideSidebar(){
+    const sidebar=document.querySelector('.sidebar')
+    sidebar.style.display= 'none'
+    }
+  </script>
+</body>
+</html>
